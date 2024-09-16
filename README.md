@@ -28,12 +28,11 @@ La mejor visualizacion de los territorios es en Qgiscloud, aqui podra dar clic s
 --- 
 
 ---
-##### Fuente: https://www.wikiwand.com/es/articles/Pueblos_ind%C3%ADgenas_de_Costa_Rica
+##### Fuente:(https://guiascostarica.com/megazoom/tren_full.html)
 ---
 ##### Atlas de Costa Rica 2014 v1.3: http://www.kyriosoft.com/atlas/Paginas/PaginaPrincipal.html
 ---
-<iframe src="https://www.google.com/maps/d/embed?mid=1FjruFFovcRgOgdk0y4ZOk1Y95uI6pyU&ehbc=2E312F" width="640" height="480"></iframe>
-![Mapa](https://github.com/abcgeomatica/Territorios-Indigenas-Costa-Rica/blob/master/Territorios%20Indigenas.jpg)
+
 
 Mapa en GEE code (Requiere registro):
 https://code.earthengine.google.com/ccc44036cdabe9187ca757fe6b322f81
