@@ -32,7 +32,7 @@ La mejor visualizacion de los territorios es en Qgiscloud, aqui podra dar clic s
 ---
 ##### Atlas de Costa Rica 2014 v1.3: http://www.kyriosoft.com/atlas/Paginas/PaginaPrincipal.html
 ---
-
+<iframe src="https://www.google.com/maps/d/embed?mid=1FjruFFovcRgOgdk0y4ZOk1Y95uI6pyU&ehbc=2E312F" width="640" height="480"></iframe>
 ![Mapa](https://github.com/abcgeomatica/Territorios-Indigenas-Costa-Rica/blob/master/Territorios%20Indigenas.jpg)
 
 Mapa en GEE code (Requiere registro):
