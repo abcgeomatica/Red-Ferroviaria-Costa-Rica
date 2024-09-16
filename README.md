@@ -1,6 +1,6 @@
 # RED FERROVIARIA DE COSTA RICA
 ---
-## En algun momento de su historia ferrocarrilera se llego a contar con cerca de 1200 Km de lineas.
+## Se muestra la red que tuvo el pais, desde las primeras en el centro de la meseta, Alajuela, San Jose y Cartago. Luego el sector del Atlantico y el Pacifico; estos tienen codificado el numero de tramo. Luego los ferrocarriles del sur; Quepos, Golfito y Changuinola, subdivididos en los distritos de atencion. En algun momento de su historia ferrocarrilera se llego a contar con cerca de 1200 Km de lineas.
 ## MAPA https://abcgeomatica.github.io/Red-Ferroviaria-Costa-Rica/
 ---
 ![MAPA](https://github.com/abcgeomatica/Red-Ferroviaria-Costa-Rica/blob/master/Red%20Ferroviaria%20Costa%20Rica.jpg)
