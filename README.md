@@ -4,8 +4,9 @@ En algun momento de su historia ferrocarrilera se llego a contar con cerca de 12
 ---
 
 ##### Fuentes:
+##### https://www.snitcr.go.cr/ico_servicios_ogc_info?k=bm9kbzo6Mjc=&nombre=IGN%20Cartograf%C3%ADa%201:25mil
 ##### https://guiascostarica.com/megazoom/tren_full.html
-https://crtrenes.blogspot.com/2011/08/ferrocarril-del-sur.html
+##### https://crtrenes.blogspot.com/2011/08/ferrocarril-del-sur.html
 ---
 ##### Atlas de Costa Rica 2014 v1.3: http://www.kyriosoft.com/atlas/Paginas/PaginaPrincipal.html
 ---
