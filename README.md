@@ -1,6 +1,6 @@
-## RED FERROVIARIA DE COSTA RICA
+# RED FERROVIARIA DE COSTA RICA
 ---
-En algun momento de su historia ferrocarrilera se llego a contar con cerca de 1200 Km de lineas.
+## En algun momento de su historia ferrocarrilera se llego a contar con cerca de 1200 Km de lineas.
 ---
 
 ##### Fuentes:
