@@ -1,1 +1,116 @@
+// Cargar lineas de Red Ferroviaria de Costa Rica
+var table = ee.FeatureCollection("projects/ee-abcgeomaticaagricola/assets/Lineas_ferreas_Costa_Rica");
+
+// Descripcion del etiquetado de elementos de la leyenda
+var Etiquetas = [
+  'Armuelles',
+  'Distrito Coto',
+  'Distrito Damas',
+  'Distrito Esquinas',
+  'Distrito Naranjo',
+  'Distrito Palmar',
+  'Distrito Pirris',
+  'Distrito Savegre',
+  'Ferrocarril al Atlantico',
+  'Ferrocarril de Costa Rica',
+  'Ferrocarril del Sur (Changuinola)',
+  'Ferrocarril del Sur (Golfito)',
+  'Ferrocarril Electrico al Pacifico',
+  'Golfito',
+  'Laurel',
+  'Linea Vieja',
+  'Ramal America',
+  'Ramal Babilonia',
+  'Ramal Caldera',
+  'Ramal Carmen',
+  'Ramal Estrella',
+  'Ramal Freeman',
+  'Ramal Imperio',
+  'Ramal Indiana',
+  'Ramal Quepos',
+  'Ramal Rositania',
+  'Ramal Tancari',
+  'Ramal Ticaban',
+  'Ramal Zent',
+      ];
+
+// Configuracion del titulo y posicion de la leyenda
+var Titulo = ui.Label({
+  value: 'RED FERROVIARIA COSTA RICA', // Titulo de la leyenda
+  style: {fontWeight: 'bold', fontSize: '13px', margin: '0px 0px 10px 0px',}}); // Estilo y dimensiones
+var Leyenda = ui.Panel({
+  style: {position: 'bottom-left', padding: '2px 3px'}}); // Posicion, altura y anchura
+Leyenda.add(Titulo);
+
+// Configuracion de la simbologia
+var Simbologia = ['d3658d', '8b51d6', '5854d5','7b99cb','85eac7','0e33ec','ce5ab3','3ce31b' , '499cdb', 'e241dd', '3dde42', 'd3d769', 'e8a024', 'd0e58b','82d319', '6840ec','ac64d5','a5ed7c' , 'dd7e61', 'ce3b53', 'db2b8f', '3fe8ee', '36d07b', 'ed893c', '5fe6d2', '73c5de', 'ceb84b', 'cd3dea', '0dcc39' ];
+var Simbolos = function(simbolo, texto) {
+var TextoLeyenda = ui.Label({
+  value: texto,
+  style: {margin: '3px 0px 2px 3px'}}); // Posicion en la separacion de los textos
+var CajaLeyenda = ui.Label({
+  style: {backgroundColor: '#' + simbolo,
+  padding: '8px', // TamaÃ±o del simbolo
+  margin: '0px 0px 2px 0px'}}); // Posicion en la separacion de los simbolos
+
+//Representacion de leyenda en el visor
+return ui.Panel({
+  widgets: [CajaLeyenda, TextoLeyenda],
+  layout: ui.Panel.Layout.Flow('horizontal')});};
+for (var i = 0; i < 29; i++) {Leyenda.add(Simbolos(Simbologia[i], Etiquetas[i]));} 
+
+Map.add(Leyenda);
+
+
+// Colorear lineas de red
+var colorTable = ee.Dictionary({
+  'Armuelles': 'd3658d',
+  'Distrito Coto': '8b51d6',
+  'Distrito Damas': '5854d5',
+  'Distrito Esquinas': '7b99cb',
+  'Distrito Naranjo': '85eac7',
+  'Distrito Palmar': '0e33ec',
+  'Distrito Pirris': 'ce5ab3',
+  'Distrito Savegre': '3ce31b',
+  'Ferrocarril al Atlantico': '499cdb',
+  'Ferrocarril de Costa Rica': 'e241dd',
+  'Ferrocarril del Sur (Changuinola)': '3dde42',
+  'Ferrocarril del Sur (Golfito)': 'd3d769',
+  'Ferrocarril Electrico al Pacifico': 'e8a024',
+  'Golfito': 'd0e58b',
+  'Laurel': '82d319',
+  'Linea Vieja': '6840ec',
+  'Ramal America': 'ac64d5',
+  'Ramal Babilonia': 'a5ed7c',
+  'Ramal Caldera': 'dd7e61',
+  'Ramal Carmen': 'ce3b53',
+  'Ramal Estrella': 'db2b8f',
+  'Ramal Freeman': '3fe8ee',
+  'Ramal Imperio': '36d07b',
+  'Ramal Indiana': 'ed893c',
+  'Ramal Quepos': '5fe6d2',
+  'Ramal Rositania': '73c5de',
+  'Ramal Tancari': 'ceb84b',
+  'Ramal Ticaban': 'cd3dea',
+  'Ramal Zent': '0dcc39',
+  });
+
+var styled = table
+  .map(function (feature) {
+    return feature.set('style', {
+      color: colorTable.get(feature.get('nombre'), '777777'), // Color por defecto si no se encuentra en colorTable.
+      width: 3 // Ancho de la línea.
+    });
+  })
+  .style({
+    styleProperty: 'style',
+  });
+
+//Visualizar mapa
+Map.centerObject(table, 8);
+
+Map.addLayer(table,{opacity:0.8},'Atributos red');
+Map.addLayer(styled,{opacity:0.8},'Red Ferroviaria Costa Rica');
+
+
 
