@@ -4,6 +4,9 @@
 ## MAPA https://abcgeomatica.github.io/Red-Ferroviaria-Costa-Rica/
 ---
 ![MAPA](https://github.com/abcgeomatica/Red-Ferroviaria-Costa-Rica/blob/master/Red%20Ferroviaria%20Costa%20Rica.jpg)
+
+## Codigo GEE  https://code.earthengine.google.com/11b095b417753a48fa2362517a56936e
+
 ##### Fuentes:
 ##### https://www.snitcr.go.cr/ico_servicios_ogc_info?k=bm9kbzo6Mjc=&nombre=IGN%20Cartograf%C3%ADa%201:25mil
 ##### https://guiascostarica.com/megazoom/tren_full.html
