@@ -5,9 +5,11 @@
 ---
 ![MAPA](https://github.com/abcgeomatica/Red-Ferroviaria-Costa-Rica/blob/master/Red%20Ferroviaria%20Costa%20Rica.jpg)
 
+## Ver mapa en otras plataformas
 ## Codigo GEE  https://code.earthengine.google.com/11b095b417753a48fa2362517a56936e
 ## App GEE https://ee-abcgeomaticaagricola.projects.earthengine.app/view/red-ferroviaria-costa-rica
 ## Google Maps  https://www.google.com/maps/d/u/0/edit?mid=1FjruFFovcRgOgdk0y4ZOk1Y95uI6pyU&ll=9.369074331244807%2C-83.7028265&z=8
+## Arcgis Online https://www.arcgis.com/home/item.html?id=4a866920c73f4825aee78c695075d97a
 
 ##### Fuentes:
 ##### https://www.snitcr.go.cr/ico_servicios_ogc_info?k=bm9kbzo6Mjc=&nombre=IGN%20Cartograf%C3%ADa%201:25mil
